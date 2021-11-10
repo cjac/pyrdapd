@@ -15,7 +15,7 @@ Use [virtualenv](https://docs.python.org/3/library/venv.html) to create somewher
 
 ```
 c:> cd %HOME%\Desktop\src\
-c:> pip install virtualenv
+c:> pip3 install virtualenv
 c:> virtualenv pyrdapd-venv
 c:> pyrdapd-venv\Scripts\activate.bat
 ```
