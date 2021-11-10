@@ -26,5 +26,5 @@ Into the newly created virtualenv, you should install the uwsgi package
 
 ```
 c:> pip3 install uwsgi
-c:> uwsgi --http :43 --wsgi-file pyrdapd.py
+c:> uwsgi --touch-reload pyrdapd.py --http :4343 --wsgi-file pyrdapd.py
 ```
