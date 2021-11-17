@@ -8,25 +8,28 @@ def application(env, start_response):
 
     m = re.search('^/(ip|autnum|domain|nameserver|entity)/(.+)', env['PATH_INFO'])
 
+    segment = m.group(1)
+    reference = m.group(2)
+
     print( m.group(1) )
 
-    if m.group(1) == 'ip':
+    if segment == 'ip':
         start_response('501 Not Implemented', [('Content-Type','text/html')])
         return [b"IP requested\n"]
 
-    if m.group(1) == 'autnum':
+    elif segment == 'autnum':
         start_response('501 Not Implemented', [('Content-Type','text/html')])
         return [b"AS requested\n"]
 
-    if m.group(1) == 'domain':
+    elif segment == 'domain':
         start_response('501 Not Implemented', [('Content-Type','text/html')])
         return [b"Domain requested\n"]
 
-    if m.group(1) == 'nameserver':
+    elif segment == 'nameserver':
         start_response('501 Not Implemented', [('Content-Type','text/html')])
         return [b"Nameserver requested\n"]
 
-    if m.group(1) == 'entity':
+    elif segment == 'entity':
         start_response('501 Not Implemented', [('Content-Type','text/html')])
         return [b"Entity requested\n"]
 
