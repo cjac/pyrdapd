@@ -1,7 +1,7 @@
 # pyrdapd
 Python RDAP Daemon
 
-Implementation of [rfc7482](https://datatracker.ietf.org/doc/html/rfc9082) in python
+Implementation of [rfc9082](https://datatracker.ietf.org/doc/html/rfc9082) in python
 
 With tests.
 
